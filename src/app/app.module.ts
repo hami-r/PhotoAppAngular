@@ -5,6 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewPhotoComponent } from './view-photo/view-photo.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 let myRoutes:Routes = [
   {
@@ -21,7 +23,8 @@ let myRoutes:Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoutes)
+    RouterModule.forRoot(myRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
